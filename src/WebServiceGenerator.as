@@ -1,16 +1,14 @@
 package
 {
-	import com.mteamapp.JSONParser;
-	
 	import contents.TextFile;
 	
-	import flash.desktop.NativeDragManager;
 	import flash.display.Sprite;
 	import flash.events.NativeDragEvent;
 	import flash.filesystem.File;
 	
-	import otherPlatforms.postMan.ServiceGenerator;
-	import otherPlatforms.postMan.model.PostManExportModel;
+	import otherPlatforms.postMan.PostManToASFiles;
+	
+	import restDoaService.RestDoaService;
 	
 	public class WebServiceGenerator extends Sprite
 	{
@@ -25,19 +23,13 @@ package
 			
 			var service:String = TextFile.load(File.desktopDirectory.resolvePath("Panjereh-video share.postman_collection.json"));
 			//trace(service);
-			var serviceData:PostManExportModel = new PostManExportModel();
-			JSONParser.parse(service,serviceData);
-			trace("serviceData : "+serviceData.item.length);
-			var serviceGenerator:ServiceGenerator = new ServiceGenerator();
-			for(var i:uint = 0 ; i<serviceData.item.length ; i++)
-			{
-				serviceGenerator.ServiceName = serviceData.item[i].name ;
-				serviceGenerator.IsGet = serviceData.item[i].request.method=="GET" ;
-				serviceGenerator.myWebServiceLocation = serviceData.item[i].request.url ;
-				
-				var serviceFile:File = File.desktopDirectory.resolvePath(serviceGenerator.ServiceName+'.as');
-				TextFile.save(serviceFile,serviceGenerator.toString());
-			}
+				PostManToASFiles.saveClasses(File.desktopDirectory.resolvePath('classes'),service);
+				//PostManToASFiles.SaveJSONtoAs(JSON.parse(service),File.desktopDirectory.resolvePath('classes'),'PostManMain');
+			RestDoaService.setUp("http://");
+			var myservice:GetVideoGroupComments = new GetVideoGroupComments();
+			myservice.load('1026');
+			var saveComment:RegisterVideoGroupComment = new RegisterVideoGroupComment();
+			saveComment.load('hi',"78f242e7-c6ea-4879-93c0-500032350d65",1026);
 		}
 		
 		protected function onDragged(event:NativeDragEvent):void
