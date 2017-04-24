@@ -1,6 +1,6 @@
 package
 {
-	public class className
+	public class RegisterVideoGroupCommentRequest
 	{
 		/**"CommentText":"من این گروه را دوست دارم"*/
 		public var CommentText:String ;
@@ -10,7 +10,7 @@ package
 		public var VideoGroupId:Number ;
 
 		
-		public function className()
+		public function RegisterVideoGroupCommentRequest()
 		{
 		}
 	}

@@ -4,7 +4,7 @@ package
 	
 	public class RegisterVideoGroupComment extends RestDoaServiceCaller
 	{
-		public var data:* = {};
+		public var data:RegisterVideoGroupCommentRespond = new RegisterVideoGroupCommentRespond() ;
 		
 		public function RegisterVideoGroupComment(offlineDataIsOK_v:Boolean=true, instantOfflineData_v:Boolean=false, maximomOfflineData:Date=null)
 		{

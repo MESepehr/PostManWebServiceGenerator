@@ -4,7 +4,7 @@ package
 	
 	public class GetVideoGroupComments extends RestDoaServiceCaller
 	{
-		public var data:* = {};
+		public var data:Vector.<GetVideoGroupCommentsRespond> = new Vector.<GetVideoGroupCommentsRespond>() ;
 		
 		public function GetVideoGroupComments(offlineDataIsOK_v:Boolean=true, instantOfflineData_v:Boolean=false, maximomOfflineData:Date=null)
 		{
