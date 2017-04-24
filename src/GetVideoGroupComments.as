@@ -13,7 +13,7 @@ package
 		
 		public function load(videoGroupId:String):void
 		{
-			super.loadParam({videoGroupId});
+			super.loadParam({videoGroupId:videoGroupId});
 		}
 	}
 }

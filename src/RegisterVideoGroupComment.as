@@ -1,4 +1,4 @@
-package 
+package
 {
 	import restDoaService.RestDoaServiceCaller;
 	
@@ -13,7 +13,7 @@ package
 		
 		public function load(CommentText:String,UserId:String,VideoGroupId:int):void
 		{
-			super.loadParam({CommentText,UserId,VideoGroupId});
+			super.loadParam({CommentText:CommentText,UserId:UserId,VideoGroupId:VideoGroupId});
 		}
 	}
 }
