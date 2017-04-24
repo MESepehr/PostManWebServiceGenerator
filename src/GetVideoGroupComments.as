@@ -8,7 +8,7 @@ package
 		
 		public function GetVideoGroupComments(offlineDataIsOK_v:Boolean=true, instantOfflineData_v:Boolean=false, maximomOfflineData:Date=null)
 		{
-			super('http://185.83.208.175:8076/api/Video/GetVideoGroupComments?videoGroupId=1026', data, offlineDataIsOK_v, instantOfflineData_v, maximomOfflineData, true);
+			super('http://185.83.208.175:8076/api/Video/GetVideoGroupComments', data, offlineDataIsOK_v, instantOfflineData_v, maximomOfflineData, true);
 		}
 		
 		public function load(videoGroupId:String):void
