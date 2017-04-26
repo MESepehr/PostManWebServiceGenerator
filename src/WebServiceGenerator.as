@@ -17,16 +17,10 @@ package
 	
 	public class WebServiceGenerator extends Sprite
 	{
-		private var dragArea:Sprite ;
-		
 		public function WebServiceGenerator()
 		{
 			super();
-			dragArea = new Sprite();
-			dragArea.graphics.beginFill(0xffff00,1);
-			dragArea.graphics.drawRect(0,0,stage.stageWidth,stage.stageHeight);
-			this.addChild(dragArea);
-			dragArea.addEventListener(NativeDragEvent.NATIVE_DRAG_ENTER, onDragged);
+			this.addEventListener(NativeDragEvent.NATIVE_DRAG_ENTER, onDragged);
 			
 			
 			NativeDragManager.acceptDragDrop(this);
@@ -52,15 +46,15 @@ package
 			var arrPath:Array = currentFile.name.split('.');
 			var type:String = arrPath[arrPath.length-1];
 			if (!currentFile.isDirectory && (type == 'json' || type == 'txt')) {
-				NativeDragManager.acceptDragDrop(dragArea);
-				dragArea.addEventListener(NativeDragEvent.NATIVE_DRAG_DROP, onDropped);
+				NativeDragManager.acceptDragDrop(this);
+				this.addEventListener(NativeDragEvent.NATIVE_DRAG_DROP, onDropped);
 			}
 		}
 		
 		private function onDropped(event:NativeDragEvent):void
 		{
-			dragArea.removeEventListener(NativeDragEvent.NATIVE_DRAG_DROP, onDropped);
-			PostManToASFiles.saveClasses(File.desktopDirectory,TextFile.load(currentFile));
+			this.removeEventListener(NativeDragEvent.NATIVE_DRAG_DROP, onDropped);
+			PostManToASFiles.saveClasses(currentFile.parent,TextFile.load(currentFile));
 		}
 	}
 }

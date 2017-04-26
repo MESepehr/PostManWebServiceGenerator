@@ -1,11 +1,53 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" currentTimeline="1" xflVersion="2.7" creatorInfo="Adobe Animate CC" platform="Windows" versionInfo="Saved by Animate Windows 15.1 build 210" majorVersion="15" minorVersion="1" buildNumber="210" previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F">
+     <media>
+          <DOMBitmapItem name="Bitmap 1" itemID="59004550-0000020d" sourceLastImported="1493189968" allowSmoothing="true" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="Bitmap 1" bitmapDataHRef="M 1 1493189968.dat" frameRight="10240" frameBottom="10240"/>
+          <DOMBitmapItem name="Bitmap 2" itemID="59004586-00000210" sourceLastImported="1493190022" allowSmoothing="true" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="Bitmap 2" bitmapDataHRef="M 2 1493190022.dat" frameRight="5120" frameBottom="5120"/>
+     </media>
+     <symbols>
+          <Include href="Symbol 1.xml" loadImmediate="false" itemID="590045ac-00000211" lastModified="1493190060"/>
+     </symbols>
      <timelines>
           <DOMTimeline name="Scene 1">
                <layers>
                     <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
-                                   <elements/>
+                                   <elements>
+                                        <DOMBitmapInstance libraryItemName="Bitmap 1">
+                                             <matrix>
+                                                  <Matrix a="0.328414916992188" d="0.328414916992188" tx="21.95" ty="108.8"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMStaticText fontRenderingMode="standard" left="117.55" width="26.45" height="32.95" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix a="2.39344787597656" d="2.39344787597656" tx="-48.7" ty="153.25"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>To</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs alignment="right" aliasText="false" lineHeight="32.95" size="27" bitmapSize="540" face="Impact"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                        <DOMBitmapInstance libraryItemName="Bitmap 2">
+                                             <matrix>
+                                                  <Matrix a="0.760543823242188" d="0.760543823242188" tx="320.15" ty="92.7"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMSymbolInstance libraryItemName="Symbol 1">
+                                             <matrix>
+                                                  <Matrix tx="275" ty="200"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                             <color>
+                                                  <Color alphaMultiplier="0"/>
+                                             </color>
+                                        </DOMSymbolInstance>
+                                   </elements>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
@@ -13,8 +55,17 @@
           </DOMTimeline>
      </timelines>
      <persistentData>
+          <PD n="ane.tmp.unzipped.folder" v="C:\Users\Admin\AppData\Local\Temp\Tmp_ANE_File_Unzipped_Packages"/>
           <PD n="com.air.sdk.path" v="D:\air\AIRSDK_25_118"/>
      </persistentData>
      <PrinterSettings/>
-     <publishHistory/>
+     <publishHistory>
+          <PublishItem publishSize="10853" publishTime="1493189795"/>
+          <PublishItem publishSize="7932" publishTime="1493183584"/>
+          <PublishItem publishSize="7942" publishTime="1493183569"/>
+          <PublishItem publishSize="10863" publishTime="1493183036"/>
+          <PublishItem publishSize="10860" publishTime="1493182991"/>
+          <PublishItem publishSize="10820" publishTime="1493182228"/>
+          <PublishItem publishSize="10825" publishTime="1493181293"/>
+     </publishHistory>
 </DOMDocument>

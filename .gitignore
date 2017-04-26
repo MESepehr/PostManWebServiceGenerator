@@ -60,4 +60,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-*.swf
+
+src/RECOVER_*
