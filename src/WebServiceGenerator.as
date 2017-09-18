@@ -1,15 +1,17 @@
-package
+﻿package
 {
 	import contents.TextFile;
 	
 	import flash.desktop.ClipboardFormats;
 	import flash.desktop.NativeDragManager;
+	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
 	import flash.events.NativeDragEvent;
 	import flash.filesystem.File;
 	import flash.filesystem.FileMode;
 	import flash.filesystem.FileStream;
+	import flash.text.TextField;
 	import flash.utils.ByteArray;
 	
 	import otherPlatforms.postMan.PostManToASFiles;
@@ -18,10 +20,28 @@ package
 	
 	public class WebServiceGenerator extends Sprite
 	{
+		private static var loggerTF:TextField,
+							loggerBackMC:MovieClip;
+		
 		public function WebServiceGenerator()
 		{
 			super();
 			this.addEventListener(NativeDragEvent.NATIVE_DRAG_ENTER, onDragged);
+			
+			loggerBackMC = new MovieClip();
+			loggerBackMC.graphics.beginFill(0x000000,0.8);
+			loggerBackMC.graphics.drawRect(0,0,stage.stageWidth,stage.stageHeight);
+			this.addChild(loggerBackMC);
+			loggerTF = new TextField();
+			loggerTF.wordWrap = true ;
+			loggerTF.width = stage.stageWidth ;
+			loggerTF.height = stage.stageHeight ;
+			loggerTF.textColor = 0xffffff ;
+			this.addChild(loggerTF);
+			loggerBackMC.visible = false ;
+			loggerTF.visible = false ;
+			loggerBackMC.mouseEnabled = loggerBackMC.mouseChildren = false ;
+			loggerTF.mouseEnabled = false ;
 			
 			var areaMC:Sprite = new Sprite();
 			areaMC.graphics.beginFill(0xff0000);
@@ -45,10 +65,26 @@ package
 			stage.addEventListener(MouseEvent.CLICK,reload);
 		}
 		
+		public static function log(str:String):void
+		{
+			loggerBackMC.visible = true ;
+			loggerTF.visible = true ;
+			loggerTF.appendText(str+"\n");
+			loggerTF.visible = true ;
+		}
+		
+		public static function clearLog():void
+		{
+			loggerBackMC.visible = false ;
+			loggerTF.visible = false ;
+			loggerTF.text = '' ;
+		}
+		
 		protected function reload(event:MouseEvent):void
 		{
 			if(currentFile!=null && currentFile.exists)
 			{
+				clearLog();
 				var serviceFolder:File = currentFile.parent.resolvePath(serviceFolderName) ;
 				var typeFolders:File = currentFile.parent.resolvePath(dataFolderName) ;
 				PostManToASFiles.saveClasses(serviceFolder,TextFile.load(currentFile),typeFolders);
@@ -75,6 +111,7 @@ package
 		
 		private function onDropped(event:NativeDragEvent):void
 		{
+			clearLog();
 			this.removeEventListener(NativeDragEvent.NATIVE_DRAG_DROP, onDropped);
 			var serviceFolder:File = currentFile.parent.resolvePath(serviceFolderName) ;
 			serviceFolder.createDirectory()

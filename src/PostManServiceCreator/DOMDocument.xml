@@ -1,8 +1,4 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" currentTimeline="1" xflVersion="2.7" creatorInfo="Adobe Animate CC" platform="Windows" versionInfo="Saved by Animate Windows 15.1 build 210" majorVersion="15" minorVersion="1" buildNumber="210" previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F">
-     <media>
-          <DOMBitmapItem name="Bitmap 1" itemID="59004550-0000020d" sourceLastImported="1493189968" allowSmoothing="true" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="Bitmap 1" bitmapDataHRef="M 1 1493189968.dat" frameRight="10240" frameBottom="10240"/>
-          <DOMBitmapItem name="Bitmap 2" itemID="59004586-00000210" sourceLastImported="1493190022" allowSmoothing="true" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="Bitmap 2" bitmapDataHRef="M 2 1493190022.dat" frameRight="5120" frameBottom="5120"/>
-     </media>
      <symbols>
           <Include href="Symbol 1.xml" loadImmediate="false" itemID="590045ac-00000211" lastModified="1493190060"/>
      </symbols>
@@ -13,11 +9,6 @@
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
-                                        <DOMBitmapInstance libraryItemName="Bitmap 1">
-                                             <matrix>
-                                                  <Matrix a="0.328414916992188" d="0.328414916992188" tx="21.95" ty="146.3"/>
-                                             </matrix>
-                                        </DOMBitmapInstance>
                                         <DOMStaticText fontRenderingMode="standard" left="117.55" width="26.45" height="32.95" autoExpand="true" isSelectable="false">
                                              <matrix>
                                                   <Matrix a="2.39344787597656" d="2.39344787597656" tx="-48.7" ty="190.75"/>
@@ -31,11 +22,6 @@
                                                   </DOMTextRun>
                                              </textRuns>
                                         </DOMStaticText>
-                                        <DOMBitmapInstance libraryItemName="Bitmap 2">
-                                             <matrix>
-                                                  <Matrix a="0.760543823242188" d="0.760543823242188" tx="320.15" ty="130.2"/>
-                                             </matrix>
-                                        </DOMBitmapInstance>
                                         <DOMSymbolInstance libraryItemName="Symbol 1">
                                              <matrix>
                                                   <Matrix tx="275" ty="200"/>
@@ -81,11 +67,24 @@
           </DOMTimeline>
      </timelines>
      <persistentData>
-          <PD n="ane.tmp.unzipped.folder" v="C:\Users\Admin\AppData\Local\Temp\Tmp_ANE_File_Unzipped_Packages"/>
-          <PD n="com.air.sdk.path" v="D:\air\AIRSDK_25_118"/>
+          <PD n="ane.tmp.unzipped.folder" v="C:\Users\MEHDIK~1\AppData\Local\Temp\Tmp_ANE_File_Unzipped_Packages"/>
+          <PD n="com.air.sdk.path" v="D:\karimpoor\AppData\AIRSDK_25"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="6158" publishTime="1504777458"/>
+          <PublishItem publishSize="19185" publishTime="1504776119"/>
+          <PublishItem publishSize="19139" publishTime="1504776072"/>
+          <PublishItem publishSize="18911" publishTime="1504772795"/>
+          <PublishItem publishSize="18893" publishTime="1504771851"/>
+          <PublishItem publishSize="18898" publishTime="1504771715" publishDebug="true"/>
+          <PublishItem publishSize="18894" publishTime="1504771566"/>
+          <PublishItem publishSize="18870" publishTime="1504771484"/>
+          <PublishItem publishSize="18869" publishTime="1504769779"/>
+          <PublishItem publishSize="18864" publishTime="1504769671"/>
+          <PublishItem publishSize="18880" publishTime="1504769602" publishDebug="true"/>
+          <PublishItem publishSize="18810" publishTime="1504768972" publishDebug="true"/>
+          <PublishItem publishSize="18807" publishTime="1504768964" publishDebug="true"/>
           <PublishItem publishSize="64759" publishTime="1500186079"/>
           <PublishItem publishSize="64761" publishTime="1500185987"/>
           <PublishItem publishSize="64769" publishTime="1500185646"/>
@@ -93,17 +92,5 @@
           <PublishItem publishSize="64741" publishTime="1500181233" publishDebug="true"/>
           <PublishItem publishSize="64750" publishTime="1500181062" publishDebug="true"/>
           <PublishItem publishSize="63302" publishTime="1493816461" publishDebug="true"/>
-          <PublishItem publishSize="63309" publishTime="1493816450" publishDebug="true"/>
-          <PublishItem publishSize="63302" publishTime="1493816440" publishDebug="true"/>
-          <PublishItem publishSize="63316" publishTime="1493816056" publishDebug="true"/>
-          <PublishItem publishSize="58206" publishTime="1493193167"/>
-          <PublishItem publishSize="58015" publishTime="1493190089"/>
-          <PublishItem publishSize="10853" publishTime="1493189795"/>
-          <PublishItem publishSize="7932" publishTime="1493183584"/>
-          <PublishItem publishSize="7942" publishTime="1493183569"/>
-          <PublishItem publishSize="10863" publishTime="1493183036"/>
-          <PublishItem publishSize="10860" publishTime="1493182991"/>
-          <PublishItem publishSize="10820" publishTime="1493182228"/>
-          <PublishItem publishSize="10825" publishTime="1493181293"/>
      </publishHistory>
 </DOMDocument>

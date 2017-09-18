@@ -73,7 +73,7 @@
     <EventCompress>7</EventCompress>
     <OverrideSounds>0</OverrideSounds>
     <Version>36</Version>
-    <ExternalPlayer>AdobeAIR_25.0.0.118</ExternalPlayer>
+    <ExternalPlayer>AdobeAIR_25.0.0.108</ExternalPlayer>
     <ActionScriptVersion>3</ActionScriptVersion>
     <PackageExportFrame>1</PackageExportFrame>
     <PackagePaths></PackagePaths>
@@ -186,10 +186,10 @@
     <pngDefaultName>1</pngDefaultName>
     <swcDefaultName>1</swcDefaultName>
     <oamDefaultName>1</oamDefaultName>
-    <flashFileName>C:\Users\Admin\Adobe Flash Builder 4.6\PostManServiceCreator\bin-debug\PostManServiceCreator.swf</flashFileName>
+    <flashFileName>C:\Users\mehdi karimpoor\Adobe Flash Builder 4.6\PostManServiceCreator_PostManServiceCreator\bin-debug\PostManServiceCreator.swf</flashFileName>
     <projectorWinFileName>PostManServiceCreator.exe</projectorWinFileName>
     <projectorMacFileName>PostManServiceCreator.app</projectorMacFileName>
-    <htmlFileName>C:\Users\Admin\Adobe Flash Builder 4.6\PostManServiceCreator\bin-debug\PostManServiceCreator.html</htmlFileName>
+    <htmlFileName>C:\Users\mehdi karimpoor\Adobe Flash Builder 4.6\PostManServiceCreator_PostManServiceCreator\bin-debug\PostManServiceCreator.html</htmlFileName>
     <gifFileName>PostManServiceCreator.gif</gifFileName>
     <jpegFileName>PostManServiceCreator.jpg</jpegFileName>
     <pngFileName>PostManServiceCreator.png</pngFileName>
@@ -239,7 +239,7 @@
     <EventCompress>7</EventCompress>
     <OverrideSounds>0</OverrideSounds>
     <Version>36</Version>
-    <ExternalPlayer>AdobeAIR_25.0.0.118</ExternalPlayer>
+    <ExternalPlayer>AdobeAIR_25.0.0.108</ExternalPlayer>
     <ActionScriptVersion>3</ActionScriptVersion>
     <PackageExportFrame>1</PackageExportFrame>
     <PackagePaths></PackagePaths>
